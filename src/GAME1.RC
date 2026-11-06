@@ -1,0 +1,19 @@
+#include <os2.h>
+#include "game1.hpp"
+
+ICON    ID_APPMAIN     GAME1.ICO
+
+MENU ID_APPMAIN
+  {
+  MENUITEM "~Quit!",           IDM_QUIT
+  }
+
+STRINGTABLE LOADONCALL MOVEABLE
+  {
+  ID_APPMAIN       "Gearing up for Games.  Sample 1"
+
+  IDS_ERR_CREATE_DIVEBUFFER     "Cannot create DIVE Buffer.  Terminating."
+  }
+
+
+
