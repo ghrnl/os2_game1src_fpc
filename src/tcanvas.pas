@@ -8,7 +8,7 @@ type
   SHORT  = integer;
   USHORT = word;
   LONG   = longint;
-  ULONG  = longint;
+  ULONG  = cardinal;
   BOOL   = boolean;
 
 // enum ERRORSTATUS
@@ -393,7 +393,8 @@ begin
       begin
         // Calculate and store the offset into the buffer of that row.
         apbyRowStart [ulIndex] := pbySurface + ulOffset;
-        ulOffset := ulOffset + lRowSize;
+        if (ulIndex<usHeightIn-1) then
+          ulOffset := ulOffset + lRowSize;
       end; {for}
 
       usWidth  := usWidthIn;
