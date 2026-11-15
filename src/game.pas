@@ -30,7 +30,6 @@ const
 type
   HDC     = cardinal;
   LONG    = longint;
-  ULONG   = cardinal; // needed ???
   HPAL    = longint; // cardinal?
   SHORT   = integer;
   PCANVAS = pointer; // ???
