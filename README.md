@@ -7,7 +7,7 @@ game1src (EDM2)
 # Compilation
 Using fpc 3.2.2 (the src directory has a makeme.cmd)
 
-fpc -Fuunits game
+fpc -Fuunits -Iinc game1
 
 Resource file (as needed): RC -r GAME1.RC
 
